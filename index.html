@@ -2,21 +2,31 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Company Name</title>
 </head>
+<link rel="stylesheet" href="styles.css">
 <body>
 	<header id="header">
-		<img id="header-img" src="" alt="">
+		<video autoplay muted loop id="video" src="https://storage.googleapis.com/coverr-main/mp4/Toy_is_gone.mp4"></video>
+		<div id="header-text">Pet Rentals!</div>
+		<div id="overlay"></div>
 		<nav id="nav-bar">
-			<a class="nav-link" href="">Link 1</a>
-			<a class="nav-link" href="">Link 2</a>
-			<a class="nav-link" href="">Link 3</a>
+			<img id="header-img" src="https://image.flaticon.com/icons/svg/616/616554.svg" alt="">			
+			<span><a class="nav-link" href="#nav-bar">PetRentals</a></span>
+			<a class="nav-link" href="#dogs">Dogs</a>
+			<a class="nav-link" href="#testimonials">Testimonials</a>
+			<a class="nav-link" href="#contact">Contact</a>
 		</nav>
 	</header>
-		<div id="video"></div>
-		<form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
-			<input id="email" type="email">
+	<section id="dogs">Need a dog, but don't have one? Well, we've got you covered! Check out our super cute pooches below.</section>
+	<section id="testimonials">Listen to what our customers have to say!</section>
+	<section id="contact">
+			<div>Questions? Send us a message!</div>
+			<form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+			<input id="email" name="email" type="email" placeholder="Email">
 			<input id="submit" type="submit">
-		</form>
+		</form>	
+	</section>
+
 </body>
 </html>
