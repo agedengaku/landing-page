@@ -4,21 +4,40 @@
 	<meta charset="UTF-8">
 	<title>Company Name</title>
 </head>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="build/css/styles.css">
 <body>
 	<header id="header">
 		<video autoplay muted loop id="video" src="https://storage.googleapis.com/coverr-main/mp4/Toy_is_gone.mp4"></video>
 		<div id="header-text">Pet Rentals!</div>
 		<div id="overlay"></div>
 		<nav id="nav-bar">
-			<img id="header-img" src="https://image.flaticon.com/icons/svg/616/616554.svg" alt="">			
+			<img id="header-img" src="https://image.flaticon.com/icons/svg/616/616554.svg" alt="">
 			<span><a class="nav-link" href="#nav-bar">PetRentals</a></span>
 			<a class="nav-link" href="#dogs">Dogs</a>
 			<a class="nav-link" href="#testimonials">Testimonials</a>
 			<a class="nav-link" href="#contact">Contact</a>
 		</nav>
 	</header>
-	<section id="dogs">Need a dog, but don't have one? Well, we've got you covered! Check out our super cute pooches below.</section>
+	<section id="dogs">
+		<h2>Need a dog?</h2>
+		<p>We've got you covered! Check out our super cute pooches below.</p>
+		<div id="dog-wrapper">
+			<div class="dog-row">
+				<div class="dog-box">
+					<video muted loop class="pooch-vids" src="https://storage.googleapis.com/coverr-main/mp4/Dog-Lovers.mp4"></video>
+				</div>
+				<div class="dog-box"></div>
+				<div class="dog-box"></div>
+				<div class="dog-box"></div>
+			</div>			
+			<div class="dog-row">
+				<div class="dog-box"></div>
+				<div class="dog-box"></div>
+				<div class="dog-box"></div>
+				<div class="dog-box"></div>
+			</div>
+		</div>
+	</section>
 	<section id="testimonials">Listen to what our customers have to say!</section>
 	<section id="contact">
 			<div>Questions? Send us a message!</div>
@@ -27,6 +46,6 @@
 			<input id="submit" type="submit">
 		</form>	
 	</section>
-
+	<script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,52 @@
+body {
+  padding: 0;
+  margin: 0; }
+
+header {
+  background-color: grey;
+  height: 300px;
+  overflow: hidden;
+  position: relative; }
+
+#video {
+  object-fit: cover;
+  max-height: 300px;
+  width: 100%; }
+
+#overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 50; }
+
+#header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 100;
+  color: #fff; }
+
+#header-img {
+  width: 50px;
+  height: auto; }
+
+#nav-bar {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%; }
+
+#dog-wrapper {
+  width: 80%;
+  height: 500px;
+  border: 1px solid black; }
+
+.pooch-vids {
+  width: 100%;
+  height: auto; }
