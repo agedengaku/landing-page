@@ -40,14 +40,16 @@ header {
   position: fixed;
   z-index: 100;
   background-color: rgba(255, 255, 255, 0.8);
-  width: 100%; }
+  width: 100vw; }
 
 #dog-wrapper {
-  width: 100vw;
-  border: 1px solid black; }
+  width: 100vw; }
 
 .dog-box {
-  width: 20%; }
+  width: 25%; }
+
+.dog-row {
+  display: flex; }
 
 .pooch-vids {
   width: 100%;

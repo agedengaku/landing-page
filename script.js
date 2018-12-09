@@ -1,11 +1,22 @@
 var poochVids = document.getElementsByClassName("pooch-vids");
 
 [].forEach.call(poochVids, (poochVid) => {
+
   poochVid.addEventListener("mouseover", function(){
- 	poochVid.play();
+  	var playPromise = poochVid.play();	
+ 		if (playPromise !== undefined) {
+ 			playPromise.then(_ => {
+ 				console.log("now playing");
+ 			})
+ 			.catch(error => {
+ 				console.log("uh oh");
+ 			});
+ 		}
   });	
   poochVid.addEventListener("mouseout", function(){
- 	poochVid.pause();
+	  if (!poochVid.paused) {
+		  poochVid.pause(); 
+		}	
   });  
 });
 
