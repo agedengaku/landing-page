@@ -43,11 +43,14 @@ header {
 	width: 100%;
 }
 #dog-wrapper {
-	width: 80%;
-	height: 500px;
+	width: 100vw;
 	border: 1px solid black;
+}
+.dog-box {
+	width: 20%;
 }
 .pooch-vids {
 	width: 100%;
 	height: auto;
+	margin-bottom: -4px;
 }
