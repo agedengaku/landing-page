@@ -4,6 +4,10 @@
 	<meta charset="UTF-8">
 	<title>Company Name</title>
 </head>
+<!-- <link rel="stylesheet" href="build/bootstrap/css/bootstrap.css"> -->
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+       	<link rel="stylesheet" type="text/css" href="build/slick/slick.css"/>
+				<link rel="stylesheet" type="text/css" href="build/slick/slick-theme.css"/>
 <link rel="stylesheet" href="build/css/styles.css">
 <body>
 	<header id="header">
@@ -13,7 +17,7 @@
 		<nav id="nav-bar">
 			<img id="header-img" src="https://image.flaticon.com/icons/svg/616/616554.svg" alt="">
 			<span><a class="nav-link" href="#nav-bar">PetRentals</a></span>
-			<a class="nav-link" href="#dogs">Dogs</a>
+			<span><a class="nav-link" href="#dogs">Dogs</a></span>
 			<a class="nav-link" href="#testimonials">Testimonials</a>
 			<a class="nav-link" href="#contact">Contact</a>
 		</nav>
@@ -38,14 +42,53 @@
 			</div>
 		</div>
 	</section>
-	<section id="testimonials">Listen to what our customers have to say!</section>
+	<section id="testimonials">
+		<h2>Listen to what our customers have to say!</h2>
+    <div class="single-item">
+			<div>
+				<blockquote class="slide-width">Pet rentals! They are the best!
+        <cite><img src="" alt="Picture of student - M.E.">Joe Bob</cite>
+        </blockquote>
+			</div>
+			
+			<div class="">
+				<blockquote class="slide-width">Oh my lord.
+        <cite><img src="resources/img/testimonial-4-Scott.jpg" alt="Picture of student - Scott">Scott Jed</cite>
+        </blockquote>
+			</div>
+			
+			<div class="">
+				<blockquote class="slide-width">Why hello there
+        <cite><img src="resources/img/testimonial-3-JM.jpg" alt="Picture of student - JM Taylor">JM</cite>
+        </blockquote>
+			</div>
+			
+			<div class="">
+				<blockquote class="slide-width">Dogs are the best!
+        <cite><img src="resources/img/testimonial-2-Josef.jpg" alt="Picture of student - Josef Walda">David Bowie</cite>
+        </blockquote>
+			</div>
+			
+		</div>
+	</section>
 	<section id="contact">
-			<div>Questions? Send us a message!</div>
-			<form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
-			<input id="email" name="email" type="email" placeholder="Email">
+		<div>Questions? Send us a message!</div>
+		<form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+			<label for="name">Name</label>
+			<input id="name" name="name" type="text" placeholder="Name" required>
+			<label for="email">Email</label>
+			<input id="email" name="email" type="email" placeholder="Email" required>
+			<label for="phone">Phone</label>
+			<input id="phone" name="phone" type="tel" placeholder="Phone">
 			<input id="submit" type="submit">
 		</form>	
 	</section>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<!-- <script src="build/bootstrap/js/bootstrap.js"></script> -->
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> -->
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="build/slick/slick.js"></script>
 	<script src="script.js"></script>
 </body>
 </html>
