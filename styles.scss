@@ -1,12 +1,16 @@
+$main-color: #A0522D;
+
 body {
 	padding: 0;
 	margin: 0;
+	font-family: 'Montserrat', sans-serif;
 }
 header {
 	background-color: grey;
 	height: 300px;
 	overflow: hidden;
 	position: relative;
+	border-bottom: 10px solid $main-color;
 }
 #video {
 	object-fit: cover;
@@ -24,29 +28,57 @@ header {
 }
 #header-text {
 	position: absolute;
-	top: 50%;
+	top: 55%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
 	z-index: 100;
-	color: #fff;
+	color: rgba(255,255,255,0.8);
+	font-family: 'Baloo Tamma', cursive;
+	font-size: 6em;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: $main-color;	
 }
 #header-img {
 	width: 50px;
 	height: auto;
 }
-#nav-bar {
+nav {
 	top: 0;
 	left: 0;
 	position: fixed;
 	z-index: 100;
 	background-color: rgba(255, 255, 255, 0.8);
 	width: 100vw;
+	padding: 0 20px;
+	height: 50px;
+	display: flex;
+}
+#nav-link-container {
+	padding: 0 20px;
+	display: flex;
+	align-items: center;
+}
+.nav-item {
+	margin: 0 10px;
+}
+.nav-item:first-of-type > a {
+	color: $main-color;
+	font-size: 1.5em;
+}
+.nav-link {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	text-decoration: none;
+	color: #666;		
+}
+section > h1 {
+	text-align: center;
+	font-size: 2em;
 }
 #dog-wrapper {
 	width: 100vw;
 }
 .dog-box {
-	// display: flex;
 	width: 25%;
 }
 .dog-row {
